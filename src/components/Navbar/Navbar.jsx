@@ -1,11 +1,12 @@
 import React, { useState } from "react";
 import "./Navbar.scss";
 import "../../shared/typography.scss";
+import { useSettings } from "../../hooks/useSettings";
 
 const navbarItems = ["Home", "Destination", "Crew", "Technology"];
 
 const Navbar = () => {
-  const [activeIndex, setActiveIndex] = useState(0);
+  const { activeIndex, changeIndex } = useSettings();
   return (
     <div className="nav">
       <div className="nav__logo">
@@ -20,7 +21,7 @@ const Navbar = () => {
               className={`nav__items-item nav-text ${
                 activeIndex === i ? "active" : ""
               }`}
-              onClick={() => setActiveIndex(i)}
+              onClick={() => changeIndex(i)}
             >
               <span className="nav-text-bold">0{i}</span>
               {`${item}`}

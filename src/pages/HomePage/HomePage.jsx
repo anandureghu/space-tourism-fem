@@ -2,8 +2,11 @@ import React from "react";
 import "./HomePage.scss";
 import { H1, H5 } from "../../shared/typography";
 import MainButton from "../../components/MainButton/MainButton";
+import { useSettings } from "../../hooks/useSettings";
 
 const HomePage = () => {
+  const { changeIndex } = useSettings();
+
   return (
     <div className="home">
       <div className="home__main">
@@ -19,7 +22,7 @@ const HomePage = () => {
         </div>
       </div>
       <div className="home__actions">
-        <MainButton>Explore</MainButton>
+        <MainButton onClick={() => changeIndex(1)}>Explore</MainButton>
       </div>
     </div>
   );
