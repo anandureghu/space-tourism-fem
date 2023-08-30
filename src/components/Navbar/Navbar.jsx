@@ -22,7 +22,7 @@ const Navbar = () => {
               }`}
               onClick={() => setActiveIndex(i)}
             >
-              <span className="nav-text-bold">0{i + 1}</span>
+              <span className="nav-text-bold">0{i}</span>
               {`${item}`}
             </div>
           );

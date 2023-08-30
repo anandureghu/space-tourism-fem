@@ -1,0 +1,29 @@
+@import "../../shared/colors.scss";
+@import "../../shared/fonts.scss";
+
+.main-btn {
+  background-color: $primary;
+  font-size: 32px;
+  color: $dark;
+  outline: none;
+  border: none;
+  padding: 100px 50px;
+  border-radius: 300px;
+  font-family: $bellafair;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.3s ease;
+
+  &__wrapper {
+    display: flex;
+    justify-content: center;
+  }
+
+  &:hover {
+    margin-right: 0;
+    border: 50px solid #bcbcbcb5;
+    -webkit-background-clip: padding-box; /* for Safari */
+    background-clip: padding-box; /* for IE9+, Firefox 4+, Opera, Chrome */
+    transform: scale(1.02);
+  }
+}

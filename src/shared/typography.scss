@@ -2,8 +2,8 @@
 
 .heading {
   font-family: $bellafair;
-  margin: 0;
-  padding: 0;
+  text-transform: uppercase;
+  font-weight: normal;
 
   &-1 {
     font-size: 150px;
@@ -22,9 +22,10 @@
   }
 
   &-5 {
-    font-family: $barlow-condensed;
+    font-family: "Barlow Condensed";
     font-size: 28px;
-    letter-spacing: 4.75;
+    letter-spacing: 4.75px;
+    font-weight: normal;
   }
 }
 
