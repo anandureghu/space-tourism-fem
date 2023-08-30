@@ -1,0 +1,51 @@
+@import "./fonts.scss";
+
+.heading {
+  font-family: $bellafair;
+  margin: 0;
+  padding: 0;
+
+  &-1 {
+    font-size: 150px;
+  }
+
+  &-2 {
+    font-size: 100px;
+  }
+
+  &-3 {
+    font-size: 56px;
+  }
+
+  &-4 {
+    font-size: 32px;
+  }
+
+  &-5 {
+    font-family: $barlow-condensed;
+    font-size: 28px;
+    letter-spacing: 4.75;
+  }
+}
+
+.sub-heading {
+  margin: 0;
+  padding: 0;
+
+  &-1 {
+    font-family: $bellafair;
+    font-size: 28px;
+  }
+
+  &-2 {
+    font-family: $barlow-condensed;
+    font-size: 14px;
+    letter-spacing: 2.35;
+  }
+}
+
+.nav-text {
+  font-family: $barlow-condensed;
+  font-size: 16px;
+  letter-spacing: 2.7;
+}
