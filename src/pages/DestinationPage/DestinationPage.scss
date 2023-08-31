@@ -4,4 +4,28 @@
   background-image: url("/assets/destination/background-destination-desktop.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  padding: 230px 7% 20px;
+
+  &__header {
+    &-subheading {
+      color: gray;
+      font-weight: bold;
+    }
+  }
+
+  &__content {
+    display: flex;
+    height: calc(100vh - 260px);
+
+    &-image {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    &-data {
+      flex: 1;
+    }
+  }
 }

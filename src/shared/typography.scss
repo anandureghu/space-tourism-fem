@@ -1,9 +1,11 @@
 @import "./fonts.scss";
+@import "./colors.scss";
 
 .heading {
   font-family: $bellafair;
   text-transform: uppercase;
   font-weight: normal;
+  color: $primary;
 
   &-1 {
     font-size: 150px;
@@ -23,7 +25,7 @@
   }
 
   &-5 {
-    font-family: "Barlow Condensed";
+    font-family: $barlow-condensed;
     font-size: 28px;
     letter-spacing: 4.75px;
     font-weight: normal;
