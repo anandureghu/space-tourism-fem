@@ -35,6 +35,9 @@
 .sub-heading {
   margin: 0;
   padding: 0;
+  text-transform: uppercase;
+  color: $primary;
+  font-weight: normal;
 
   &-1 {
     font-family: $bellafair;
@@ -44,7 +47,7 @@
   &-2 {
     font-family: $barlow-condensed;
     font-size: 14px;
-    letter-spacing: 2.35;
+    letter-spacing: 2.35px;
   }
 }
 

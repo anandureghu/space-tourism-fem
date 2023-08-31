@@ -22,12 +22,11 @@ export const H5 = ({ children }) => {
 };
 
 export const SubHeading1 = ({ children }) => {
-  console.log(children);
-  return <h1 className="sub-heading-1">{children}</h1>;
+  return <h1 className="sub-heading sub-heading-1">{children}</h1>;
 };
 
 export const SubHeading2 = ({ children }) => {
-  return <h2 className="sub-heading-2">{children}</h2>;
+  return <h2 className="sub-heading sub-heading-2">{children}</h2>;
 };
 
 export const NavText = ({ children }) => {

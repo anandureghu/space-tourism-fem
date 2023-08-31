@@ -1,0 +1,29 @@
+@import "../../shared/colors.scss";
+@import "../../shared/fonts.scss";
+
+.destinationDetails {
+  &__title {
+    margin: 45px 0;
+  }
+  &__description {
+    color: $secondary;
+    font-size: 18px;
+    line-height: 32px;
+    font-family: $barlow;
+    max-width: 444px;
+    padding-bottom: 50px;
+    border-bottom: 0.3px solid #383b4b;
+  }
+  &__subdetails {
+    color: $primary;
+    max-width: 444px;
+    display: flex;
+    margin-top: 30px;
+    gap: 70px;
+
+    .sub-heading-2 {
+      color: $secondary;
+      margin-bottom: 10px;
+    }
+  }
+}

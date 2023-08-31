@@ -4,7 +4,7 @@
   background-image: url("/assets/destination/background-destination-desktop.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 230px 7% 20px;
+  padding: 230px 300px 20px;
 
   &__header {
     &-subheading {
@@ -15,7 +15,8 @@
 
   &__content {
     display: flex;
-    height: calc(100vh - 260px);
+    gap: 150px;
+    height: calc(100vh - 270px);
 
     &-image {
       flex: 1;
