@@ -1,0 +1,24 @@
+@import "../../shared/colors.scss";
+@import "../../shared/fonts.scss";
+
+.tab {
+  &__tabs {
+    display: flex;
+    gap: 20px;
+    color: $primary;
+
+    &-tab {
+      cursor: pointer;
+      padding: 20px 0px;
+      text-align: center;
+      text-transform: uppercase;
+      font-family: $barlow-condensed;
+      font-size: 16px;
+      letter-spacing: 2.7px;
+
+      &.active {
+        border-bottom: 5px solid $primary;
+      }
+    }
+  }
+}
