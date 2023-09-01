@@ -49,6 +49,10 @@
         font-family: $bellafair;
         font-size: 32px;
 
+        &:hover {
+          border: 0.1px solid $primary-medium;
+        }
+
         &.active {
           background-color: $primary;
           color: $dark;
