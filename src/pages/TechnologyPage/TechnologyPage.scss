@@ -1,0 +1,59 @@
+@import "../../shared/colors.scss";
+@import "../../shared/fonts.scss";
+
+.technology {
+  width: 100%;
+  height: 100vh;
+  background-image: url("/assets/technology/background-technology-desktop.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 230px 0 20px 10%;
+  overflow-y: hidden;
+
+  &__header {
+    &-subheading {
+      color: gray;
+      font-weight: bold;
+    }
+  }
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &-details {
+      display: flex;
+      gap: 30px;
+    }
+
+    &-steps {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+
+      &--step {
+        height: 80px;
+        width: 80px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50px;
+        margin: 20px 0;
+        border: 0.1px solid $primary-light;
+        -webkit-background-clip: padding-box; /* for Safari */
+        background-clip: padding-box; /* for IE9+, Firefox 4+, Opera, Chrome */
+        color: $primary;
+        cursor: pointer;
+        font-family: $bellafair;
+        font-size: 32px;
+
+        &.active {
+          background-color: $primary;
+          color: $dark;
+        }
+      }
+    }
+  }
+}
