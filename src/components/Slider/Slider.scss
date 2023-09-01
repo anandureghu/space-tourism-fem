@@ -1,0 +1,33 @@
+@import "../../shared/colors.scss";
+
+.slider {
+  &__content {
+    position: relative;
+  }
+
+  &__dots {
+    &-container {
+      position: absolute;
+      display: flex;
+      gap: 20px;
+      bottom: 80px;
+    }
+
+    &-dot {
+      content: " ";
+      height: 13px;
+      width: 13px;
+      background-color: $primary-light;
+      cursor: pointer;
+      border-radius: 50%;
+
+      &.active {
+        background-color: $primary;
+      }
+
+      &:hover {
+        background-color: $primary-medium;
+      }
+    }
+  }
+}

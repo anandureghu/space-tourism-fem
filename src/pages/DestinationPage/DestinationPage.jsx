@@ -3,7 +3,7 @@ import "./DestinationPage.scss";
 import { useSettings } from "../../hooks/useSettings";
 import { H5 } from "../../shared/typography";
 import Tab from "../../components/Tab/Tab";
-import DestinationDetails from "../../components/DescriptionDetails/DestinationDetails";
+import DestinationDetails from "../../views/DescriptionDetails/DestinationDetails";
 
 const destinations = ["Moon", "Mars", "Europa", "Titan"];
 
