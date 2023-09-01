@@ -5,7 +5,6 @@ import "./DestinationDetails.scss";
 
 const DestinationDetails = ({ destination }) => {
   const [destinationDetails, setDestinationDetails] = useState(null);
-  console.log(destinationDetails);
   useEffect(() => {
     const newDestination = destinations.find((d) => d.name === destination);
     if (newDestination) {
